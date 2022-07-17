@@ -7,7 +7,7 @@ import { grpahCMSImageLoader } from '../util';
 
 const PostCard = ({ post }) => (
   <div className="p-0 pb-12 mb-8 bg-white rounded-lg shadow-lg lg:p-8">
-    {/* <div className="relative inline-block w-full mb-6 shadow-md h-60 lg:h-80">
+    { <div className="relative inline-block w-full mb-6 shadow-md h-60 lg:h-80">
       <Image
         unoptimized
         loader={grpahCMSImageLoader}
@@ -16,10 +16,7 @@ const PostCard = ({ post }) => (
         layout="fill"
         src={post.featuredImage.url}
       />
-    </div> */}
-    <div className="relative mb-6 overflow-hidden shadow-md pb-80">
-      <img src={post.featuredImage.url} alt="" className="absolute object-cover object-top w-full rounded-t-lg shadow-lg h-80 lg:rounded-lg" />
-    </div>
+    </div> }
 
     <h1 className="mb-8 text-3xl font-semibold text-center transition duration-700 cursor-pointer hover:text-pink-600">
       <Link href={`/post/${post.slug}`}>{post.title}</Link>
